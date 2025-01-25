@@ -7,6 +7,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"  rel="stylesheet" />
+    <link rel="icon" href="./assets/img/inred logo_Mesa de trabajo 1 (1).png" type="image/png">
+
 
 </head>
 <body class="bg-gray-100 font-sans">
@@ -25,6 +27,7 @@
 
 
   <!-- Encabezado minimalista -->
+<!-- Encabezado minimalista -->
 <nav class="bg-orange-500 fixed w-full top-0 left-0 shadow-md z-50">
     <div class="max-w-screen-xl mx-auto flex items-center justify-between p-4">
         <!-- Logo -->
@@ -46,6 +49,23 @@
             <a href="#eventos" class="text-black hover:text-white transition-all">Eventos</a>
             <a href="#noticias" class="text-black hover:text-white transition-all">Noticias</a>
             <a href="#contacto" class="text-black hover:text-white transition-all">Contacto</a>
+
+            <!-- Nuevo menú Deportes -->
+            <div class="relative group">
+                <a href="#" class="text-black hover:text-white transition-all flex items-center">
+                    Deportes
+                    <svg class="w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </a>
+                <div class="absolute hidden group-hover:block bg-orange-500 text-black shadow-lg rounded-md mt-2 w-40">
+                    <a href="futbol.html" class="block px-4 py-2 hover:bg-orange-600 hover:text-white">Fútbol</a>
+                    <a href="baloncesto.html" class="block px-4 py-2 hover:bg-orange-600 hover:text-white">Baloncesto</a>
+                    <a href="natacion.html" class="block px-4 py-2 hover:bg-orange-600 hover:text-white">Natación</a>
+                    <a href="bmx.html" class="block px-4 py-2 hover:bg-orange-600 hover:text-white">BMX</a>
+                    <a href="futbol_sala.html" class="block px-4 py-2 hover:bg-orange-600 hover:text-white">Fútbol Sala</a>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -56,9 +76,23 @@
         <a href="#eventos" class="py-2 text-black hover:text-white">Eventos</a>
         <a href="#noticias" class="py-2 text-black hover:text-white">Noticias</a>
         <a href="#contacto" class="py-2 text-black hover:text-white">Contacto</a>
+
+        <!-- Nuevo menú Deportes para móvil -->
+        <div class="w-full text-center">
+            <button id="mobile-deportes-toggle" class="py-2 text-black hover:text-white w-full">
+                Deportes
+            </button>
+            <div id="mobile-deportes-menu" class="hidden flex flex-col bg-orange-500">
+                <a href="futbol.html" class="py-2 text-black hover:text-white">Fútbol</a>
+                <a href="baloncesto.html" class="py-2 text-black hover:text-white">Baloncesto</a>
+                <a href="natacion.html" class="py-2 text-black hover:text-white">Natación</a>
+                <a href="bmx.html" class="py-2 text-black hover:text-white">BMX</a>
+                <a href="futbol_sala.html" class="py-2 text-black hover:text-white">Fútbol Sala</a>
+            </div>
+        </div>
     </div>
 </nav>
-    
+
   
     
 
@@ -152,50 +186,52 @@
 <section id="portafolio" class="py-16 bg-gray-50">
     <h2 class="text-3xl font-bold text-gray-800 text-center mb-12">Nuestro Portafolio</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-        <!-- Fútbol -->
-        <div class="bg-white shadow-lg rounded-lg flex flex-col items-center p-6">
-            <i class="fas fa-futbol text-orange-600 text-6xl mb-4"></i>
-            <h3 class="text-lg font-semibold text-gray-800">Fútbol</h3>
-            <p class="text-gray-600 text-center mb-4">Entrenamientos para todas las edades.</p>
-            
-        </div>
-          <!-- Baloncesto -->
-          <div class="bg-white shadow-lg rounded-lg flex flex-col items-center p-6">
-            <i class="fas fa-basketball-ball text-orange-600 text-6xl mb-4"></i>
-            <h3 class="text-lg font-semibold text-gray-800">Baloncesto</h3>
-            <p class="text-gray-600 text-center mb-4">Clases y ligas para todas las edades.</p>
-            
-        </div>
-       
-        <!-- Natación -->
-        <div class="bg-white shadow-lg rounded-lg flex flex-col items-center p-6">
-            <i class="fas fa-swimmer text-orange-600 text-6xl mb-4"></i>
-            <h3 class="text-lg font-semibold text-gray-800">Natación</h3>
-            <p class="text-gray-600 text-center mb-4">Cursos para principiantes y avanzados.</p>
-            
-        </div>
-        <!-- BMX -->
-        <div class="bg-white shadow-lg rounded-lg flex flex-col items-center p-6">
-            <i class="fas fa-bicycle text-orange-600 text-6xl mb-4"></i>
-            <h3 class="text-lg font-semibold text-gray-800">BMX</h3>
-            <p class="text-gray-600 text-center mb-4">Técnicas y competencias para ciclistas extremos.</p>
-            
-        </div>
-       <!-- Fútbol Sala -->
-       <div class="bg-white shadow-lg rounded-lg flex flex-col items-center p-6">
+    <!-- Fútbol -->
+    <a href="./pages/futbol.html" class="bg-white shadow-lg rounded-lg flex flex-col items-center p-6 hover:shadow-xl transition duration-300">
+        <i class="fas fa-futbol text-orange-600 text-6xl mb-4"></i>
+        <h3 class="text-lg font-semibold text-gray-800">Fútbol</h3>
+        <p class="text-gray-600 text-center mb-4">Entrenamientos para todas las edades.</p>
+    </a>
+
+    <!-- Baloncesto -->
+    <a href="baloncesto.html" class="bg-white shadow-lg rounded-lg flex flex-col items-center p-6 hover:shadow-xl transition duration-300">
+        <i class="fas fa-basketball-ball text-orange-600 text-6xl mb-4"></i>
+        <h3 class="text-lg font-semibold text-gray-800">Baloncesto</h3>
+        <p class="text-gray-600 text-center mb-4">Clases y ligas para todas las edades.</p>
+    </a>
+
+    <!-- Natación -->
+    <a href="natacion.html" class="bg-white shadow-lg rounded-lg flex flex-col items-center p-6 hover:shadow-xl transition duration-300">
+        <i class="fas fa-swimmer text-orange-600 text-6xl mb-4"></i>
+        <h3 class="text-lg font-semibold text-gray-800">Natación</h3>
+        <p class="text-gray-600 text-center mb-4">Cursos para principiantes y avanzados.</p>
+    </a>
+
+    <!-- BMX -->
+    <a href="bmx.html" class="bg-white shadow-lg rounded-lg flex flex-col items-center p-6 hover:shadow-xl transition duration-300">
+        <i class="fas fa-bicycle text-orange-600 text-6xl mb-4"></i>
+        <h3 class="text-lg font-semibold text-gray-800">BMX</h3>
+        <p class="text-gray-600 text-center mb-4">Técnicas y competencias para ciclistas extremos.</p>
+    </a>
+
+    <!-- Fútbol Sala -->
+    <a href="futbol_sala.html" class="bg-white shadow-lg rounded-lg flex flex-col items-center p-6 hover:shadow-xl transition duration-300">
         <i class="fas fa-running text-orange-600 text-6xl mb-4"></i>
         <h3 class="text-lg font-semibold text-gray-800">Fútbol Sala</h3>
         <p class="text-gray-600 text-center mb-4">Clases y torneos para aficionados y profesionales.</p>
+    </a>
+
+     <!-- Voleibol -->
+     <a href="voleibol.html" class="bg-white shadow-lg rounded-lg flex flex-col items-center p-6">
+        <i class="fas fa-volleyball-ball text-orange-600 text-6xl mb-4"></i>
+        <h3 class="text-lg font-semibold text-gray-800">Voleibol</h3>
+        <p class="text-gray-600 text-center mb-4">Equipos y entrenamientos para todos los niveles.</p>
        
-    </div>
-        <!-- Voleibol -->
-        <div class="bg-white shadow-lg rounded-lg flex flex-col items-center p-6">
-            <i class="fas fa-volleyball-ball text-orange-600 text-6xl mb-4"></i>
-            <h3 class="text-lg font-semibold text-gray-800">Voleibol</h3>
-            <p class="text-gray-600 text-center mb-4">Equipos y entrenamientos para todos los niveles.</p>
-           
-        </div>
-    </div>
+     </a>
+
+</div>
+
+<!-- Botón de Inscripción -->
 
     <div class="mt-8 flex justify-center">
         <button id="openModal" class="bg-green-500 text-white font-bold py-3 px-6 rounded-lg flex items-center gap-2 shadow-lg hover:bg-green-600">
@@ -272,7 +308,7 @@
 
             <!-- Tarjeta 3 -->
             <div class="bg-gray-100 p-6 rounded-lg shadow-md flex flex-col items-center">
-                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FAlcaldiaPiendamoTunia%2Fposts%2Fpfbid0jPhxhc4s4hge62YqoiR1PC3fYvnKAwPnq5jpotExtn6EEW3ANbhMBUWNuVpLThhil&show_text=true&width=500" 
+                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Finred.piendamo%2Fposts%2Fpfbid0AKYZUJJKaEbpNq2m9Tb2dzV5z45gbhkuLqLGmPQkd4YzZtHkbr9Macjo4DG1dkrpl&show_text=true&width=500" 
                     class="w-full h-[500px] sm:h-[550px] md:h-[600px] rounded-lg" 
                     style="border:none;overflow:auto" 
                     scrolling="yes" 
@@ -280,6 +316,7 @@
                     allowfullscreen="true" 
                     allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
                 </iframe>
+               
             </div>
         </div>
     </div>
@@ -450,7 +487,7 @@
     </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
-<script src="/assets/js/main.js"></script>
+<script src="./assets/js/main.js"></script>
 </body>
 </html>
 </body>

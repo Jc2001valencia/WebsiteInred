@@ -43,4 +43,12 @@ const menuToggle = document.getElementById('menu-toggle');
             currentSlide = (currentSlide + 1) % slides.length;
             showSlide(currentSlide);
         }, 5000);
+
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    
+        document.getElementById('mobile-deportes-toggle').addEventListener('click', function () {
+            document.getElementById('mobile-deportes-menu').classList.toggle('hidden');
+        });
     
