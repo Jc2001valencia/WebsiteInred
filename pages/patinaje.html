@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inred Piendamó</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"  rel="stylesheet" />
+    <link rel="icon" href="./assets/img/inred logo_Mesa de trabajo 1 (1).png" type="image/png">
+
+
+</head>
+<body class="bg-gray-100 font-sans">
+
+<!-- Botón flotante de WhatsApp -->
+<div class="fixed bottom-4 right-4 flex items-center space-x-2 group">
+    <a href="https://wa.me/573001234567" target="_blank" 
+        class="bg-green-500 hover:bg-green-600 text-white rounded-full w-16 h-16 flex items-center justify-center shadow-xl transition-all duration-300">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" class="w-10 h-10">
+    </a>
+    <span class="hidden group-hover:inline-block bg-gray-800 text-white text-sm px-4 py-2 rounded-md shadow-lg transition-all duration-300">
+        Escríbenos al WhatsApp
+    </span>
+</div>
+
+
+<!-- Encabezado minimalista -->
+<nav class="bg-orange-500 fixed w-full top-0 left-0 shadow-md z-50">
+    <div class="max-w-screen-xl mx-auto flex items-center justify-between p-4">
+        <!-- Logo -->
+        <a href="#" class="flex items-center">
+            <img src="./assets/img/inred logo_Mesa de trabajo 1 (1).png" class="h-8" alt="Logo Institucional" />
+        </a>
+
+        <!-- Botón para menú móvil -->
+        <button id="menu-toggle" class="md:hidden text-black focus:outline-none">
+            <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+        </button>
+
+        <!-- Menú de navegación -->
+        <div id="menu" class="hidden md:flex space-x-6">
+            <a href="#controls-carousel" class="text-black hover:text-white transition-all">Inicio</a>
+            <a href="#quienes-somos" class="text-black hover:text-white transition-all">Misión y Visión</a>
+            <a href="#eventos" class="text-black hover:text-white transition-all">Eventos</a>
+            <a href="#noticias" class="text-black hover:text-white transition-all">Noticias</a>
+            <a href="#contacto" class="text-black hover:text-white transition-all">Contacto</a>
+
+            <!-- Menú desplegable Deportes -->
+            <div class="relative group">
+                <a href="#servicios" class="text-black hover:text-white transition-all flex items-center">
+                    Deportes
+                    <svg class="w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </a>
+                <div class="absolute left-0 hidden group-hover:block bg-orange-500 text-black shadow-lg rounded-md mt-2 w-40">
+                    <a href="futbol.html" class="block px-4 py-2 hover:bg-orange-600 hover:text-white">Fútbol</a>
+                    <a href="baloncesto.html" class="block px-4 py-2 hover:bg-orange-600 hover:text-white">Baloncesto</a>
+                    <a href="natacion.html" class="block px-4 py-2 hover:bg-orange-600 hover:text-white">Natación</a>
+                    <a href="bmx.html" class="block px-4 py-2 hover:bg-orange-600 hover:text-white">BMX</a>
+                    <a href="futbol_sala.html" class="block px-4 py-2 hover:bg-orange-600 hover:text-white">Fútbol Sala</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menú desplegable para móvil -->
+    <div id="mobile-menu" class="hidden flex flex-col items-center bg-orange-500 md:hidden">
+        <a href="#controls-carousel" class="py-2 text-black hover:text-white">Inicio</a>
+        <a href="#quienes-somos" class="py-2 text-black hover:text-white">Misión y Visión</a>
+        <a href="#eventos" class="py-2 text-black hover:text-white">Eventos</a>
+        <a href="#noticias" class="py-2 text-black hover:text-white">Noticias</a>
+        <a href="#contacto" class="py-2 text-black hover:text-white">Contacto</a>
+
+        <!-- Deportes para móvil -->
+        <div class="w-full text-center">
+            <a href="#servicios" class="py-2 text-black hover:text-white">Deportes</a>
+            <button id="mobile-deportes-toggle" class="py-2 text-black hover:text-white w-full">
+                Submenú Deportes
+            </button>
+            <div id="mobile-deportes-menu" class="hidden flex flex-col bg-orange-500">
+                <a href="futbol.html" class="py-2 text-black hover:text-white">Fútbol</a>
+                <a href="baloncesto.html" class="py-2 text-black hover:text-white">Baloncesto</a>
+                <a href="natacion.html" class="py-2 text-black hover:text-white">Natación</a>
+                <a href="bmx.html" class="py-2 text-black hover:text-white">BMX</a>
+                <a href="futbol_sala.html" class="py-2 text-black hover:text-white">Fútbol Sala</a>
+            </div>
+        </div>
+    </div>
+</nav>
+    
+  <!--   Cuerpo de la paguina    -->
+    
+<!-- Información General del Deporte -->
+<section id="info-baloncesto" class="py-16 bg-white text-center">
+    <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-4xl font-bold text-orange-600 mb-6">Baloncesto</h2>
+        <p class="text-lg text-gray-700 leading-relaxed">
+            El baloncesto es un deporte dinámico y emocionante. En Piendamó, ofrecemos entrenamientos
+            para todas las edades, fomentando el trabajo en equipo, la agilidad y la estrategia de juego.
+        </p>
+    </div>
+</section>
+
+<!-- Horarios de Entrenamiento -->
+<section id="horarios-baloncesto" class="py-16 bg-gray-200 text-center">
+    <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-orange-600 mb-6">Horarios de Entrenamiento</h2>
+        <table class="w-full bg-white shadow-md rounded-lg overflow-hidden">
+            <thead class="bg-orange-500 text-white">
+                <tr>
+                    <th class="py-3 px-6">Día</th>
+                    <th class="py-3 px-6">Hora</th>
+                    <th class="py-3 px-6">Categoría</th>
+                    <th class="py-3 px-6">Lugar</th>
+                </tr>
+            </thead>
+            <tbody class="text-gray-700">
+                <tr>
+                    <td class="py-4 px-6">Lunes</td>
+                    <td class="py-4 px-6">16:00 - 18:00</td>
+                    <td class="py-4 px-6">Infantil</td>
+                    <td class="py-4 px-6">Coliseo Municipal</td>
+                </tr>
+                <tr>
+                    <td class="py-4 px-6">Miércoles</td>
+                    <td class="py-4 px-6">17:00 - 19:00</td>
+                    <td class="py-4 px-6">Juvenil</td>
+                    <td class="py-4 px-6">Gimnasio Deportivo</td>
+                </tr>
+                <tr>
+                    <td class="py-4 px-6">Viernes</td>
+                    <td class="py-4 px-6">18:00 - 20:00</td>
+                    <td class="py-4 px-6">Femenino</td>
+                    <td class="py-4 px-6">Coliseo Principal</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- Instructores -->
+<section id="instructores-baloncesto" class="py-16 bg-white text-center">
+    <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-orange-600 mb-6">Nuestros Instructores</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-gray-100 rounded-lg shadow-md p-6">
+                <img src="./assets/img/instructor1.jpg" class="w-32 h-32 mx-auto rounded-full mb-4" alt="Instructor">
+                <h3 class="text-xl font-semibold">María López</h3>
+                <p class="text-gray-700">Entrenadora con certificación FIBA y 8 años de experiencia.</p>
+            </div>
+            <div class="bg-gray-100 rounded-lg shadow-md p-6">
+                <img src="./assets/img/instructor2.jpg" class="w-32 h-32 mx-auto rounded-full mb-4" alt="Instructor">
+                <h3 class="text-xl font-semibold">Pedro Ramírez</h3>
+                <p class="text-gray-700">Exjugador profesional con especialidad en técnica individual.</p>
+            </div>
+            <div class="bg-gray-100 rounded-lg shadow-md p-6">
+                <img src="./assets/img/instructor3.jpg" class="w-32 h-32 mx-auto rounded-full mb-4" alt="Instructor">
+                <h3 class="text-xl font-semibold">Andrea González</h3>
+                <p class="text-gray-700">Especialista en baloncesto juvenil y desarrollo de habilidades.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Espacios Deportivos -->
+<section id="espacios-baloncesto" class="py-16 bg-gray-200 text-center">
+    <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-orange-600 mb-6">Espacios Deportivos</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="./assets/img/cancha1.jpg" class="w-full h-48 object-cover" alt="Cancha de baloncesto">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold">Coliseo Municipal</h3>
+                    <p class="text-gray-700">Cancha oficial con gradas y vestuarios.</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="./assets/img/cancha2.jpg" class="w-full h-48 object-cover" alt="Zona deportiva">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold">Parque Deportivo</h3>
+                    <p class="text-gray-700">Área recreativa con varias canchas al aire libre.</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="./assets/img/cancha3.jpg" class="w-full h-48 object-cover" alt="Gimnasio cerrado">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold">Gimnasio Deportivo</h3>
+                    <p class="text-gray-700">Espacio techado ideal para entrenamientos intensivos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+    <!-- Pie de Página -->
+<footer class="bg-orange-600 text-white py-12">
+    <div class="max-w-7xl mx-auto px-6">
+        <!-- Logotipo y Servicios -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Logotipo -->
+            <div class="flex flex-col items-center">
+                <img src="../assets/img/inred logo_Mesa de trabajo 1 (1).png" alt="Logotipo Inred Piendamó" class="w-38 h-auto mb-4">
+  
+            </div>
+            <!-- Servicios -->
+            <div class="text-center">
+                <h3 class="text-xl font-bold mb-4">Servicios y Deportes</h3>
+                <ul class="space-y-2">
+                    <li>⚽ Fútbol</li>
+                    <li>🏊 Natación</li>
+                    <li>🏀 Baloncesto</li>
+                    <li>🤾 Fútbol Sala</li>
+                    <li>🚴 BMX</li>
+                    <li>🏐 Voleibol</li>
+                </ul>
+            </div>
+            
+            <!-- Redes Sociales -->
+            <div class="text-center">
+                <h3 class="text-xl font-bold mb-4">Síguenos</h3>
+                <div class="flex justify-center space-x-4">
+                    <a href="#" class="text-white hover:text-gray-300 text-2xl">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-gray-300 text-2xl">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-gray-300 text-2xl">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-gray-300 text-2xl">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Enlaces de Interés -->
+<div class="mt-12 border-t border-white pt-8 text-center">
+    <h3 class="text-lg font-bold mb-4">Enlaces de Interés</h3>
+    <div class="flex flex-wrap justify-center space-x-6 gap-6">
+        <a href="https://www.piendamo-cauca.gov.co" target="_blank" class="hover:text-gray-300">
+            <img src="../assets/img/piendamo.png" alt="Piendamo" class="w-32 h-auto max-w-full mx-auto">
+        </a>
+        <a href="https://www.cauca.gov.co/paginas/default.aspx" target="_blank" class="hover:text-gray-300">
+            <img src="../assets/img/gover.png" alt="Gobernación del Cauca" class="w-32 h-auto max-w-full mx-auto">
+        </a>
+        <a href="https://www.mindeporte.gov.co/" target="_blank" class="hover:text-gray-300">
+            <img src="../assets/img/mindeportes.jpg" alt="Mindeporte" class="w-32 h-auto max-w-full mx-auto">
+        </a>
+    </div>
+</div>
+
+        <!-- Derechos Reservados -->
+        <p class="mt-8 text-sm text-center">
+            © 2025 INRED Piendamó. Todos los derechos reservados.
+        </p>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
+</body>
+</html>
