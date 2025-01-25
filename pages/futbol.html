@@ -25,8 +25,7 @@
 </div>
 
 
-
-  <!-- Encabezado minimalista -->
+<!-- Encabezado minimalista -->
 <nav class="bg-orange-500 fixed w-full top-0 left-0 shadow-md z-50">
     <div class="max-w-screen-xl mx-auto flex items-center justify-between p-4">
         <!-- Logo -->
@@ -48,6 +47,23 @@
             <a href="#eventos" class="text-black hover:text-white transition-all">Eventos</a>
             <a href="#noticias" class="text-black hover:text-white transition-all">Noticias</a>
             <a href="#contacto" class="text-black hover:text-white transition-all">Contacto</a>
+
+            <!-- Menú desplegable Deportes -->
+            <div class="relative group">
+                <a href="#servicios" class="text-black hover:text-white transition-all flex items-center">
+                    Deportes
+                    <svg class="w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </a>
+                <div class="absolute left-0 hidden group-hover:block bg-orange-500 text-black shadow-lg rounded-md mt-2 w-40">
+                    <a href="futbol.html" class="block px-4 py-2 hover:bg-orange-600 hover:text-white">Fútbol</a>
+                    <a href="baloncesto.html" class="block px-4 py-2 hover:bg-orange-600 hover:text-white">Baloncesto</a>
+                    <a href="natacion.html" class="block px-4 py-2 hover:bg-orange-600 hover:text-white">Natación</a>
+                    <a href="bmx.html" class="block px-4 py-2 hover:bg-orange-600 hover:text-white">BMX</a>
+                    <a href="futbol_sala.html" class="block px-4 py-2 hover:bg-orange-600 hover:text-white">Fútbol Sala</a>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -58,6 +74,21 @@
         <a href="#eventos" class="py-2 text-black hover:text-white">Eventos</a>
         <a href="#noticias" class="py-2 text-black hover:text-white">Noticias</a>
         <a href="#contacto" class="py-2 text-black hover:text-white">Contacto</a>
+
+        <!-- Deportes para móvil -->
+        <div class="w-full text-center">
+            <a href="#servicios" class="py-2 text-black hover:text-white">Deportes</a>
+            <button id="mobile-deportes-toggle" class="py-2 text-black hover:text-white w-full">
+                Submenú Deportes
+            </button>
+            <div id="mobile-deportes-menu" class="hidden flex flex-col bg-orange-500">
+                <a href="futbol.html" class="py-2 text-black hover:text-white">Fútbol</a>
+                <a href="baloncesto.html" class="py-2 text-black hover:text-white">Baloncesto</a>
+                <a href="natacion.html" class="py-2 text-black hover:text-white">Natación</a>
+                <a href="bmx.html" class="py-2 text-black hover:text-white">BMX</a>
+                <a href="futbol_sala.html" class="py-2 text-black hover:text-white">Fútbol Sala</a>
+            </div>
+        </div>
     </div>
 </nav>
     
@@ -173,7 +204,7 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- Logotipo -->
             <div class="flex flex-col items-center">
-                <img src="./assets/img/inred logo_Mesa de trabajo 1 (1).png" alt="Logotipo Inred Piendamó" class="w-38 h-auto mb-4">
+                <img src="../assets/img/inred logo_Mesa de trabajo 1 (1).png" alt="Logotipo Inred Piendamó" class="w-38 h-auto mb-4">
   
             </div>
             <!-- Servicios -->
@@ -213,13 +244,13 @@
     <h3 class="text-lg font-bold mb-4">Enlaces de Interés</h3>
     <div class="flex flex-wrap justify-center space-x-6 gap-6">
         <a href="https://www.piendamo-cauca.gov.co" target="_blank" class="hover:text-gray-300">
-            <img src="./assets/img/piendamo.png" alt="Piendamo" class="w-32 h-auto max-w-full mx-auto">
+            <img src="../assets/img/piendamo.png" alt="Piendamo" class="w-32 h-auto max-w-full mx-auto">
         </a>
         <a href="https://www.cauca.gov.co/paginas/default.aspx" target="_blank" class="hover:text-gray-300">
-            <img src="./assets/img/gover.png" alt="Gobernación del Cauca" class="w-32 h-auto max-w-full mx-auto">
+            <img src="../assets/img/gover.png" alt="Gobernación del Cauca" class="w-32 h-auto max-w-full mx-auto">
         </a>
         <a href="https://www.mindeporte.gov.co/" target="_blank" class="hover:text-gray-300">
-            <img src="./assets/img/mindeportes.jpg" alt="Mindeporte" class="w-32 h-auto max-w-full mx-auto">
+            <img src="../assets/img/mindeportes.jpg" alt="Mindeporte" class="w-32 h-auto max-w-full mx-auto">
         </a>
     </div>
 </div>
@@ -231,7 +262,7 @@
     </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
-<script src="/assets/js/main.js"></script>
+<script src="../assets/js/main.js"></script>
 </body>
 </html>
 </body>

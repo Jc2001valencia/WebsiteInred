@@ -51,4 +51,3 @@ const menuToggle = document.getElementById('menu-toggle');
         document.getElementById('mobile-deportes-toggle').addEventListener('click', function () {
             document.getElementById('mobile-deportes-menu').classList.toggle('hidden');
         });
-    

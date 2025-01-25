@@ -24,9 +24,6 @@
     </span>
 </div>
 
-
-
-  <!-- Encabezado minimalista -->
 <!-- Encabezado minimalista -->
 <nav class="bg-orange-500 fixed w-full top-0 left-0 shadow-md z-50">
     <div class="max-w-screen-xl mx-auto flex items-center justify-between p-4">
@@ -50,15 +47,15 @@
             <a href="#noticias" class="text-black hover:text-white transition-all">Noticias</a>
             <a href="#contacto" class="text-black hover:text-white transition-all">Contacto</a>
 
-            <!-- Nuevo menú Deportes -->
+            <!-- Menú desplegable Deportes -->
             <div class="relative group">
-                <a href="#" class="text-black hover:text-white transition-all flex items-center">
+                <a href="#servicios" class="text-black hover:text-white transition-all flex items-center">
                     Deportes
                     <svg class="w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                     </svg>
                 </a>
-                <div class="absolute hidden group-hover:block bg-orange-500 text-black shadow-lg rounded-md mt-2 w-40">
+                <div class="absolute left-0 hidden group-hover:block bg-orange-500 text-black shadow-lg rounded-md mt-2 w-40">
                     <a href="futbol.html" class="block px-4 py-2 hover:bg-orange-600 hover:text-white">Fútbol</a>
                     <a href="baloncesto.html" class="block px-4 py-2 hover:bg-orange-600 hover:text-white">Baloncesto</a>
                     <a href="natacion.html" class="block px-4 py-2 hover:bg-orange-600 hover:text-white">Natación</a>
@@ -77,10 +74,11 @@
         <a href="#noticias" class="py-2 text-black hover:text-white">Noticias</a>
         <a href="#contacto" class="py-2 text-black hover:text-white">Contacto</a>
 
-        <!-- Nuevo menú Deportes para móvil -->
+        <!-- Deportes para móvil -->
         <div class="w-full text-center">
+            <a href="#servicios" class="py-2 text-black hover:text-white">Deportes</a>
             <button id="mobile-deportes-toggle" class="py-2 text-black hover:text-white w-full">
-                Deportes
+                Submenú Deportes
             </button>
             <div id="mobile-deportes-menu" class="hidden flex flex-col bg-orange-500">
                 <a href="futbol.html" class="py-2 text-black hover:text-white">Fútbol</a>
@@ -92,9 +90,6 @@
         </div>
     </div>
 </nav>
-
-  
-    
 
  <!-- Sección del Banner Carousel Mejorado -->
 
@@ -183,7 +178,7 @@
 
 
    <!-- Portafolio de Servicios -->
-<section id="portafolio" class="py-16 bg-gray-50">
+<section id="servicios" class="py-16 bg-gray-50">
     <h2 class="text-3xl font-bold text-gray-800 text-center mb-12">Nuestro Portafolio</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
     <!-- Fútbol -->
@@ -225,6 +220,14 @@
      <a href="./pages/voleibol.html" class="bg-white shadow-lg rounded-lg flex flex-col items-center p-6">
         <i class="fas fa-volleyball-ball text-orange-600 text-6xl mb-4"></i>
         <h3 class="text-lg font-semibold text-gray-800">Voleibol</h3>
+        <p class="text-gray-600 text-center mb-4">Equipos y entrenamientos para todos los niveles.</p>
+       
+     </a>
+
+     <!-- Patinaje -->
+     <a href="./pages/patinaje.html" class="bg-white shadow-lg rounded-lg flex flex-col items-center p-6">
+        <i class="fas fa-volleyball-ball text-orange-600 text-6xl mb-4"></i>
+        <h3 class="text-lg font-semibold text-gray-800">Patinaje</h3>
         <p class="text-gray-600 text-center mb-4">Equipos y entrenamientos para todos los niveles.</p>
        
      </a>
