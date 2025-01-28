@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inred Piendamó</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"  rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
     <link rel="icon" href="./assets/img/inred logo_Mesa de trabajo 1 (1).png" type="image/png">
 
 
 </head>
-<body class="bg-gray-100 font-sans">
 
-<!-- Botón flotante de WhatsApp -->
-<div class="fixed bottom-4 right-4 flex items-center space-x-2 group">
-    <a href="https://wa.me/573001234567" target="_blank" 
-        class="bg-green-500 hover:bg-green-600 text-white rounded-full w-16 h-16 flex items-center justify-center shadow-xl transition-all duration-300">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" class="w-10 h-10">
-    </a>
-    <span class="hidden group-hover:inline-block bg-gray-800 text-white text-sm px-4 py-2 rounded-md shadow-lg transition-all duration-300">
-        Escríbenos al WhatsApp
-    </span>
-</div>
+<body class="bg-gray-100 font-sans"> <!-- Clase de fondo y tipografía -->
 
-<!-- Encabezado minimalista -->
+    <!-- Botón flotante de WhatsApp -->
+    <div class="fixed bottom-4 right-4 flex items-center space-x-2 group">
+        <a href="https://wa.me/573001234567" target="_blank"
+            class="bg-green-500 hover:bg-green-600 text-white rounded-full w-16 h-16 flex items-center justify-center shadow-xl transition-all duration-300">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" class="w-10 h-10">
+        </a>
+        <span
+            class="hidden group-hover:inline-block bg-gray-800 text-white text-sm px-4 py-2 rounded-md shadow-lg transition-all duration-300">
+            Escríbenos al WhatsApp
+        </span>
+    </div>
+
+   <!-- Encabezado minimalista -->
 <nav class="bg-orange-500 fixed w-full top-0 left-0 shadow-md z-50">
     <div class="max-w-screen-xl mx-auto flex items-center justify-between p-4">
         <!-- Logo -->
@@ -33,34 +36,37 @@
         </a>
 
         <!-- Botón para menú móvil -->
-        <button id="menu-toggle" class="md:hidden text-black focus:outline-none">
-            <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <button id="menu-toggle" class="md:hidden text-white font-bold focus:outline-none">
+            <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
             </svg>
         </button>
 
         <!-- Menú de navegación -->
         <div id="menu" class="hidden md:flex space-x-6">
-            <a href="#controls-carousel" class="text-black hover:text-white transition-all">Inicio</a>
-            <a href="#quienes-somos" class="text-black hover:text-white transition-all">Misión y Visión</a>
-            <a href="#eventos" class="text-black hover:text-white transition-all">Eventos</a>
-            <a href="#noticias" class="text-black hover:text-white transition-all">Noticias</a>
-            <a href="#contacto" class="text-black hover:text-white transition-all">Contacto</a>
+            <a href="#controls-carousel" class="text-white font-bold hover:text-black transition-all">Inicio</a>
+            <a href="#quienes-somos" class="text-white font-bold hover:text-black transition-all">Misión y Visión</a>
+            <a href="#eventos" class="text-white font-bold hover:text-black transition-all">Eventos</a>
+            <a href="#noticias" class="text-white font-bold hover:text-black transition-all">Noticias</a>
+            <a href="#contacto" class="text-white font-bold hover:text-black transition-all">Contacto</a>
 
             <!-- Menú desplegable Deportes -->
             <div class="relative group">
-                <a href="#servicios" class="text-black hover:text-white transition-all flex items-center">
+                <a href="#servicios" class="text-white font-bold hover:text-black transition-all flex items-center">
                     Deportes
-                    <svg class="w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg class="w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                     </svg>
                 </a>
-                <div class="absolute left-0 hidden group-hover:block bg-orange-500 text-black shadow-lg rounded-md mt-2 w-40">
-                    <a href="futbol.html" class="block px-4 py-2 hover:bg-orange-600 hover:text-white">Fútbol</a>
-                    <a href="baloncesto.html" class="block px-4 py-2 hover:bg-orange-600 hover:text-white">Baloncesto</a>
-                    <a href="natacion.html" class="block px-4 py-2 hover:bg-orange-600 hover:text-white">Natación</a>
-                    <a href="bmx.html" class="block px-4 py-2 hover:bg-orange-600 hover:text-white">BMX</a>
-                    <a href="futbol_sala.html" class="block px-4 py-2 hover:bg-orange-600 hover:text-white">Fútbol Sala</a>
+                <div
+                    class="absolute left-0 hidden group-hover:block bg-orange-500 text-white shadow-lg rounded-md mt-2 w-40">
+                    <a href="futbol.html" class="block px-4 py-2 font-bold hover:bg-white hover:text-black">Fútbol</a>
+                    <a href="baloncesto.html" class="block px-4 py-2 font-bold hover:bg-white hover:text-black">Baloncesto</a>
+                    <a href="natacion.html" class="block px-4 py-2 font-bold hover:bg-white hover:text-black">Natación</a>
+                    <a href="bmx.html" class="block px-4 py-2 font-bold hover:bg-white hover:text-black">BMX</a>
+                    <a href="futbol_sala.html" class="block px-4 py-2 font-bold hover:bg-white hover:text-black">Fútbol Sala</a>
                 </div>
             </div>
         </div>
@@ -68,89 +74,112 @@
 
     <!-- Menú desplegable para móvil -->
     <div id="mobile-menu" class="hidden flex flex-col items-center bg-orange-500 md:hidden">
-        <a href="#controls-carousel" class="py-2 text-black hover:text-white">Inicio</a>
-        <a href="#quienes-somos" class="py-2 text-black hover:text-white">Misión y Visión</a>
-        <a href="#eventos" class="py-2 text-black hover:text-white">Eventos</a>
-        <a href="#noticias" class="py-2 text-black hover:text-white">Noticias</a>
-        <a href="#contacto" class="py-2 text-black hover:text-white">Contacto</a>
+        <a href="#controls-carousel" class="py-2 text-white font-bold hover:text-black">Inicio</a>
+        <a href="#quienes-somos" class="py-2 text-white font-bold hover:text-black">Misión y Visión</a>
+        <a href="#eventos" class="py-2 text-white font-bold hover:text-black">Eventos</a>
+        <a href="#noticias" class="py-2 text-white font-bold hover:text-black">Noticias</a>
+        <a href="#contacto" class="py-2 text-white font-bold hover:text-black">Contacto</a>
 
         <!-- Deportes para móvil -->
         <div class="w-full text-center">
-            <a href="#servicios" class="py-2 text-black hover:text-white">Deportes</a>
-            <button id="mobile-deportes-toggle" class="py-2 text-black hover:text-white w-full">
+            <a href="#servicios" class="py-2 text-white font-bold hover:text-black">Deportes</a>
+            <button id="mobile-deportes-toggle" class="py-2 text-white font-bold hover:text-black w-full">
                 Submenú Deportes
             </button>
             <div id="mobile-deportes-menu" class="hidden flex flex-col bg-orange-500">
-                <a href="futbol.html" class="py-2 text-black hover:text-white">Fútbol</a>
-                <a href="baloncesto.html" class="py-2 text-black hover:text-white">Baloncesto</a>
-                <a href="natacion.html" class="py-2 text-black hover:text-white">Natación</a>
-                <a href="bmx.html" class="py-2 text-black hover:text-white">BMX</a>
-                <a href="futbol_sala.html" class="py-2 text-black hover:text-white">Fútbol Sala</a>
+                <a href="futbol.html" class="py-2 text-white font-bold hover:text-black">Fútbol</a>
+                <a href="baloncesto.html" class="py-2 text-white font-bold hover:text-black">Baloncesto</a>
+                <a href="natacion.html" class="py-2 text-white font-bold hover:text-black">Natación</a>
+                <a href="bmx.html" class="py-2 text-white font-bold hover:text-black">BMX</a>
+                <a href="futbol_sala.html" class="py-2 text-white font-bold hover:text-black">Fútbol Sala</a>
             </div>
         </div>
     </div>
 </nav>
 
- <!-- Sección del Banner Carousel Mejorado -->
+<br>
+    <!-- Sección del Banner Carousel Mejorado -->
 
 
- <div id="default-carousel" class="relative w-full" data-carousel="slide">
-    <!-- Carousel wrapper -->
-    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-         <!-- Item 1 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="./assets/img/banner1.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+    <div id="default-carousel" class="relative w-full" data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+            <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="./assets/img/banner1.png"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="./assets/img/banner 2.jpeg"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="./assets/img/baner3.jpeg"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 4 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="./assets/img/banner4.jpeg"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 5 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="./assets/img/benner5.jpeg"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
         </div>
-        <!-- Item 2 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="./assets/img/banner 2.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        <!-- Slider indicators -->
+        <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                data-carousel-slide-to="2"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+                data-carousel-slide-to="3"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+                data-carousel-slide-to="4"></button>
         </div>
-        <!-- Item 3 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="./assets/img/baner3.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
-        <!-- Item 4 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="./assets/img/banner4.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
-        <!-- Item 5 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="./assets/img/benner5.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
+        <!-- Slider controls -->
+        <button type="button"
+            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev>
+            <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M5 1 1 5l4 4" />
+                </svg>
+                <span class="sr-only">Previous</span>
+            </span>
+        </button>
+        <button type="button"
+            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next>
+            <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m1 9 4-4-4-4" />
+                </svg>
+                <span class="sr-only">Next</span>
+            </span>
+        </button>
     </div>
-    <!-- Slider indicators -->
-    <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
-    </div>
-    <!-- Slider controls -->
-    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-            </svg>
-            <span class="sr-only">Previous</span>
-        </span>
-    </button>
-    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-            </svg>
-            <span class="sr-only">Next</span>
-        </span>
-    </button>
-</div>
 
 
-   <!-- Quiénes Somos -->
+  <!-- Quiénes Somos -->
 <section id="quienes-somos" class="py-16 bg-white text-center">
     <h2 class="text-3xl font-bold text-gray-800 mb-8">¿Quiénes Somos?</h2>
     <p class="text-gray-600 mb-12 max-w-3xl mx-auto text-lg">
-        Somos el <strong>INSTITUTO MUNICIPAL PARA LA RECREACIÓN Y EL DEPORTE DE PIENDAMÓ, CAUCA</strong>, una entidad comprometida con el bienestar y desarrollo integral de la comunidad a través del deporte, la recreación y el aprovechamiento del tiempo libre.
+        Somos el <strong>INSTITUTO MUNICIPAL PARA LA RECREACIÓN Y EL DEPORTE DE PIENDAMÓ, CAUCA</strong>, una
+        entidad comprometida con el bienestar y desarrollo integral de la comunidad a través del deporte, la
+        recreación y el aprovechamiento del tiempo libre.
     </p>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
         <!-- Misión -->
@@ -160,7 +189,10 @@
             </div>
             <h3 class="text-2xl font-bold text-gray-800 mb-4">Misión</h3>
             <p class="text-gray-600 text-justify">
-                Somos una entidad descentralizada que planifica, ejecuta y supervisa proyectos enfocados en fortalecer el deporte, la recreación y el tiempo libre. A través de un equipo interdisciplinario comprometido, buscamos ofrecer a la comunidad piendamoneña oportunidades participativas que fomenten una cultura deportiva y saludable, mejorando la calidad de vida en nuestro municipio.
+                Somos una entidad descentralizada que planifica, ejecuta y supervisa proyectos enfocados en
+                fortalecer el deporte, la recreación y el tiempo libre. A través de un equipo interdisciplinario
+                comprometido, buscamos ofrecer a la comunidad piendamoneña oportunidades participativas que fomenten
+                una cultura deportiva y saludable, mejorando la calidad de vida en nuestro municipio.
             </p>
         </div>
         <!-- Visión -->
@@ -170,329 +202,419 @@
             </div>
             <h3 class="text-2xl font-bold text-gray-800 mb-4">Visión</h3>
             <p class="text-gray-600 text-justify">
-                Para el año 2025, seremos reconocidos en la región como un instituto eficiente y sostenible, líder en la promoción de la salud y calidad de vida. Apoyados en investigación y formación, impulsaremos actividades deportivas, recreativas e inclusivas que promuevan la equidad, el bienestar social y la participación comunitaria.
+                Para el año 2025, seremos reconocidos en la región como un instituto eficiente y sostenible, líder
+                en la promoción de la salud y calidad de vida. Apoyados en investigación y formación, impulsaremos
+                actividades deportivas, recreativas e inclusivas que promuevan la equidad, el bienestar social y la
+                participación comunitaria.
+            </p>
+        </div>
+    </div>
+
+    <!-- Nuestro Director -->
+    <div class="flex flex-col items-center mt-12">
+        <h3 class="text-2xl font-bold text-gray-800 mb-6">Nuestro Director</h3>
+        <div class="flex items-center justify-center gap-8">
+            <img src="./assets/img/ivan.jpg" alt="Director Ivan Chaves" class=" w-90 h-80 rounded-xl mb-4">
+            <p class="text-gray-600 text-lg max-w-2xl text-justify">
+                El Sr. <strong>Iván Chaves</strong> es el Director del Instituto Municipal para la Recreación y el Deporte de Piendamó. Con una amplia experiencia en el ámbito deportivo y administrativo, Iván ha liderado diversas iniciativas para promover la práctica deportiva y mejorar la calidad de vida de la comunidad. Su enfoque está en la inclusión, el desarrollo de programas deportivos para todas las edades y la implementación de proyectos que contribuyan al bienestar social.
             </p>
         </div>
     </div>
 </section>
 
 
-   <!-- Portafolio de Servicios -->
-<section id="servicios" class="py-16 bg-gray-50">
-    <h2 class="text-3xl font-bold text-gray-800 text-center mb-12">Nuestro Portafolio</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-    <!-- Fútbol -->
-    <a href="./pages/futbol.html" class="bg-white shadow-lg rounded-lg flex flex-col items-center p-6 hover:shadow-xl transition duration-300">
-        <i class="fas fa-futbol text-orange-600 text-6xl mb-4"></i>
-        <h3 class="text-lg font-semibold text-gray-800">Fútbol</h3>
-        <p class="text-gray-600 text-center mb-4">Entrenamientos para todas las edades.</p>
-    </a>
 
-    <!-- Baloncesto -->
-    <a href="./pages/baloncesto.html" class="bg-white shadow-lg rounded-lg flex flex-col items-center p-6 hover:shadow-xl transition duration-300">
-        <i class="fas fa-basketball-ball text-orange-600 text-6xl mb-4"></i>
-        <h3 class="text-lg font-semibold text-gray-800">Baloncesto</h3>
-        <p class="text-gray-600 text-center mb-4">Clases y ligas para todas las edades.</p>
-    </a>
+    <!-- Portafolio de Servicios -->
+    <section id="servicios" class="py-16 bg-gray-50">
+        <h2 class="text-3xl font-bold text-gray-800 text-center mb-12">Nuestro Portafolio</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <!-- Fútbol -->
+            <a href="./pages/futbol.html"
+                class="bg-white shadow-lg rounded-lg flex flex-col items-center p-6 hover:shadow-xl transition duration-300">
+                <i class="fas fa-futbol text-orange-600 text-6xl mb-4"></i>
+                <h3 class="text-lg font-semibold text-gray-800">Fútbol</h3>
+                <p class="text-gray-600 text-center mb-4">Entrenamientos para todas las edades.</p>
+            </a>
 
-    <!-- Natación -->
-    <a href="./pages/natacion.html" class="bg-white shadow-lg rounded-lg flex flex-col items-center p-6 hover:shadow-xl transition duration-300">
-        <i class="fas fa-swimmer text-orange-600 text-6xl mb-4"></i>
-        <h3 class="text-lg font-semibold text-gray-800">Natación</h3>
-        <p class="text-gray-600 text-center mb-4">Cursos para principiantes y avanzados.</p>
-    </a>
+            <!-- Baloncesto -->
+            <a href="./pages/baloncesto.html"
+                class="bg-white shadow-lg rounded-lg flex flex-col items-center p-6 hover:shadow-xl transition duration-300">
+                <i class="fas fa-basketball-ball text-orange-600 text-6xl mb-4"></i>
+                <h3 class="text-lg font-semibold text-gray-800">Baloncesto</h3>
+                <p class="text-gray-600 text-center mb-4">Clases y ligas para todas las edades.</p>
+            </a>
 
-    <!-- BMX -->
-    <a href="./pages/bmx.html" class="bg-white shadow-lg rounded-lg flex flex-col items-center p-6 hover:shadow-xl transition duration-300">
-        <i class="fas fa-bicycle text-orange-600 text-6xl mb-4"></i>
-        <h3 class="text-lg font-semibold text-gray-800">BMX</h3>
-        <p class="text-gray-600 text-center mb-4">Técnicas y competencias para ciclistas extremos.</p>
-    </a>
+            <!-- Natación -->
+            <a href="./pages/natacion.html"
+                class="bg-white shadow-lg rounded-lg flex flex-col items-center p-6 hover:shadow-xl transition duration-300">
+                <i class="fas fa-swimmer text-orange-600 text-6xl mb-4"></i>
+                <h3 class="text-lg font-semibold text-gray-800">Natación</h3>
+                <p class="text-gray-600 text-center mb-4">Cursos para principiantes y avanzados.</p>
+            </a>
 
-    <!-- Fútbol Sala -->
-    <a href="./pages/futbol_sala.html" class="bg-white shadow-lg rounded-lg flex flex-col items-center p-6 hover:shadow-xl transition duration-300">
-        <i class="fas fa-running text-orange-600 text-6xl mb-4"></i>
-        <h3 class="text-lg font-semibold text-gray-800">Fútbol Sala</h3>
-        <p class="text-gray-600 text-center mb-4">Clases y torneos para aficionados y profesionales.</p>
-    </a>
+            <!-- BMX -->
+            <a href="./pages/bmx.html"
+                class="bg-white shadow-lg rounded-lg flex flex-col items-center p-6 hover:shadow-xl transition duration-300">
+                <i class="fas fa-bicycle text-orange-600 text-6xl mb-4"></i>
+                <h3 class="text-lg font-semibold text-gray-800">BMX</h3>
+                <p class="text-gray-600 text-center mb-4">Técnicas y competencias para ciclistas extremos.</p>
+            </a>
 
-     <!-- Voleibol -->
-     <a href="./pages/voleibol.html" class="bg-white shadow-lg rounded-lg flex flex-col items-center p-6">
-        <i class="fas fa-volleyball-ball text-orange-600 text-6xl mb-4"></i>
-        <h3 class="text-lg font-semibold text-gray-800">Voleibol</h3>
-        <p class="text-gray-600 text-center mb-4">Equipos y entrenamientos para todos los niveles.</p>
-       
-     </a>
+            <!-- Fútbol Sala -->
+            <a href="./pages/futbol_sala.html"
+                class="bg-white shadow-lg rounded-lg flex flex-col items-center p-6 hover:shadow-xl transition duration-300">
+                <i class="fas fa-running text-orange-600 text-6xl mb-4"></i>
+                <h3 class="text-lg font-semibold text-gray-800">Fútbol Sala</h3>
+                <p class="text-gray-600 text-center mb-4">Clases y torneos para aficionados y profesionales.</p>
+            </a>
 
-     <!-- Patinaje -->
-     <a href="./pages/patinaje.html" class="bg-white shadow-lg rounded-lg flex flex-col items-center p-6">
-        <i class="fas fa-volleyball-ball text-orange-600 text-6xl mb-4"></i>
-        <h3 class="text-lg font-semibold text-gray-800">Patinaje</h3>
-        <p class="text-gray-600 text-center mb-4">Equipos y entrenamientos para todos los niveles.</p>
-       
-     </a>
+            <!-- Voleibol -->
+            <a href="./pages/voleibol.html" class="bg-white shadow-lg rounded-lg flex flex-col items-center p-6">
+                <i class="fas fa-volleyball-ball text-orange-600 text-6xl mb-4"></i>
+                <h3 class="text-lg font-semibold text-gray-800">Voleibol</h3>
+                <p class="text-gray-600 text-center mb-4">Equipos y entrenamientos para todos los niveles.</p>
 
-</div>
+            </a>
 
-<!-- Botón de Inscripción -->
+            <a href="./pages/patinaje.html" class="bg-white shadow-lg rounded-lg flex flex-col items-center p-6">
+                <i class="fas fa-skating text-orange-600 text-6xl mb-4"></i>
+                <h3 class="text-lg font-semibold text-gray-800">Patinaje</h3>
+                <p class="text-gray-600 text-center mb-4">
+                    Desarrolla tu velocidad y técnica con nuestros entrenamientos especializados.
+                </p>
+            </a>
 
-    <div class="mt-8 flex justify-center">
-        <button id="openModal" class="bg-green-500 text-white font-bold py-3 px-6 rounded-lg flex items-center gap-2 shadow-lg hover:bg-green-600">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" class="w-6 h-6" alt="WhatsApp Icon">
-            Inscríbete mediante WhatsApp
-        </button>
-    </div>
 
-<!-- Modal de inscripción -->
-<div id="inscriptionModal" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden">
-    <div class="bg-white p-6 rounded-lg shadow-lg w-80">
-        <h2 class="text-lg font-bold mb-4">Formulario de Inscripción</h2>
-
-        <label class="block mb-2 text-sm font-medium">Nombre y Apellidos</label>
-        <input id="nombre" type="text" class="w-full p-2 border rounded-lg mb-3" placeholder="Escribe tu nombre completo" required>
-
-        <label class="block mb-2 text-sm font-medium">Edad (desde 5 años)</label>
-        <input id="edad" type="number" min="5" class="w-full p-2 border rounded-lg mb-3" placeholder="Edad" required>
-
-        <label class="block mb-2 text-sm font-medium">Documento</label>
-        <input id="documento" type="text" class="w-full p-2 border rounded-lg mb-3" placeholder="Número de documento" required>
-
-        <label class="block mb-2 text-sm font-medium">Deporte</label>
-        <select id="deporte" class="w-full p-2 border rounded-lg mb-3" required>
-            <option value="" disabled selected>Selecciona un deporte</option>
-            <option value="Fútbol">Fútbol</option>
-            <option value="Baloncesto">Baloncesto</option>
-            <option value="Natación">Natación</option>
-            <option value="Atletismo">Atletismo</option>
-        </select>
-
-        <div class="flex justify-end gap-3">
-            <button id="closeModal" class="px-4 py-2 bg-gray-400 text-white rounded-lg">Cancelar</button>
-            <button id="sendWhatsApp" class="px-4 py-2 bg-green-500 text-white rounded-lg">Enviar</button>
         </div>
-    </div>
-</div>
 
+        <!-- Botón de Inscripción -->
 
-
-</section>
-
-
-
-<!-- Noticias -->
-<section id="noticias" class="py-16 bg-white">
-    <!-- Contenedor de noticias en tarjetas -->
-    <h2 class="text-3xl font-bold text-gray-800 text-center mb-8">Noticias</h2>
-    <div class="max-w-7xl mx-auto px-4">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-            <!-- Tarjeta 1 -->
-            <div class="bg-gray-100 p-6 rounded-lg shadow-md flex flex-col items-center">
-                <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FAlcaldiaPiendamoTunia%2Fvideos%2F895969775859161%2F&show_text=true&width=500&t=0" 
-                    class="w-full h-[500px] sm:h-[550px] md:h-[600px] rounded-lg" 
-                    style="border:none;overflow:auto" 
-                    scrolling="yes" 
-                    frameborder="0" 
-                    allowfullscreen="true" 
-                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
-                </iframe>
-            </div>
-
-            <!-- Tarjeta 2 -->
-            <div class="bg-gray-100 p-6 rounded-lg shadow-md flex flex-col items-center">
-                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Finred.piendamo%2Fposts%2Fpfbid0icPJGjVVdYYxupUT8ypL9JFkdKNVaS4N7hTkod81cR9Y6Lf6E2sXFVgHyEkh5uLZl&show_text=true&width=500" 
-                    class="w-full h-[500px] sm:h-[550px] md:h-[600px] rounded-lg" 
-                    style="border:none;overflow:auto" 
-                    scrolling="yes" 
-                    frameborder="0" 
-                    allowfullscreen="true" 
-                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
-                </iframe>
-            </div>
-
-            <!-- Tarjeta 3 -->
-            <div class="bg-gray-100 p-6 rounded-lg shadow-md flex flex-col items-center">
-                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Finred.piendamo%2Fposts%2Fpfbid0AKYZUJJKaEbpNq2m9Tb2dzV5z45gbhkuLqLGmPQkd4YzZtHkbr9Macjo4DG1dkrpl&show_text=true&width=500" 
-                    class="w-full h-[500px] sm:h-[550px] md:h-[600px] rounded-lg" 
-                    style="border:none;overflow:auto" 
-                    scrolling="yes" 
-                    frameborder="0" 
-                    allowfullscreen="true" 
-                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
-                </iframe>
-               
-            </div>
+        <div class="mt-8 flex justify-center">
+            <button id="openModal"
+                class="bg-green-500 text-white font-bold py-3 px-6 rounded-lg flex items-center gap-2 shadow-lg hover:bg-green-600">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" class="w-6 h-6"
+                    alt="WhatsApp Icon">
+                Inscríbete mediante WhatsApp
+            </button>
         </div>
-    </div>
-</section>
 
+        <!-- Modal de inscripción -->
+        <div id="inscriptionModal" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden">
+            <div class="bg-white p-6 rounded-lg shadow-lg w-80">
+                <h2 class="text-lg font-bold mb-4">Formulario de Inscripción</h2>
 
+                <label class="block mb-2 text-sm font-medium">Nombre y Apellidos</label>
+                <input id="nombre" type="text" class="w-full p-2 border rounded-lg mb-3"
+                    placeholder="Escribe tu nombre completo" required>
 
+                <label class="block mb-2 text-sm font-medium">Edad (desde 5 años)</label>
+                <input id="edad" type="number" min="5" class="w-full p-2 border rounded-lg mb-3" placeholder="Edad"
+                    required>
 
+                <label class="block mb-2 text-sm font-medium">Documento</label>
+                <input id="documento" type="text" class="w-full p-2 border rounded-lg mb-3"
+                    placeholder="Número de documento" required>
 
+                <label class="block mb-2 text-sm font-medium">Deporte</label>
+                <select id="deporte" class="w-full p-2 border rounded-lg mb-3" required>
+                    <option value="" disabled selected>Selecciona un deporte</option>
+                    <option value="Fútbol">Fútbol</option>
+                    <option value="Baloncesto">Baloncesto</option>
+                    <option value="Natación">Natación</option>
+                    <option value="Atletismo">BMX</option>
+                    <option value="Atletismo">Fútbol Sala</option>
+                    <option value="Atletismo">Voleibol</option>
+                    <option value="Atletismo">Patinaje</option>
+                </select>
 
-<!-- Sección de Eventos -->
-<section id="eventos" class="py-16 bg-black text-white">
-    <div class="max-w-6xl mx-auto px-6 text-center">
-        <h2 class="text-4xl font-bold text-orange-500 mb-8">Eventos</h2>
-        <p class="text-gray-300 text-lg mb-12">
-            Descubre los eventos destacados que fomentan el deporte y la recreación en nuestra comunidad.
-        </p>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <!-- Evento 1: Intercolegiados Regionales Cauca 2024 -->
-            <div class="bg-gray-800 shadow-lg rounded-lg overflow-hidden">
-                <img src="./assets/img/intercolegiados.jpg" alt="Torneos Interbarrios de Piendamó y Tunía" class="w-full h-58 object-cover">
-                <div class="p-6">
-                    <h3 class="text-2xl font-bold text-orange-500 mb-4">Intercolegiados Regionales Cauca 2024</h3>
-                    <p class="text-gray-300 mb-4">
-                        Los mejores talentos deportivos estudiantiles del Cauca se darán cita para competir y demostrar su espíritu deportivo. ¡No te pierdas este gran evento!
-                    </p>
-                    <p class="text-gray-400 text-sm">Fecha: Marzo 2024</p>
-                    <p class="text-gray-400 text-sm">Lugar: Coliseo Municipal de Piendamó</p>
-                </div>
-            </div>
-            <!-- Evento 2: Torneos Interbarrios -->
-            <div class="bg-gray-800 shadow-lg rounded-lg overflow-hidden">
-                <img src="./assets/img/barrios.jpg" alt="Torneos Interbarrios de Piendamó y Tunía" class="w-full h-58 object-cover">
-                <div class="p-6">
-                    <h3 class="text-2xl font-bold text-orange-500 mb-4">Torneos Interbarrios Piendamó y Tunía</h3>
-                    <p class="text-gray-300 mb-4">
-                        Un espacio para la comunidad donde se reúnen deportistas de diferentes barrios para competir en diversas disciplinas. ¡Participa y apoya a tu equipo!
-                    </p>
-                    <p class="text-gray-400 text-sm">Fecha: Junio 2024</p>
-                    <p class="text-gray-400 text-sm">Lugar: Cancha Principal de Tunía</p>
+                <div class="flex justify-end gap-3">
+                    <button id="closeModal" class="px-4 py-2 bg-gray-400 text-white rounded-lg">Cancelar</button>
+                    <button id="sendWhatsApp" class="px-4 py-2 bg-green-500 text-white rounded-lg">Enviar</button>
                 </div>
             </div>
         </div>
-    </div>
-</section>
 
-<!-- Contáctanos -->
-<section id="contacto" class="py-16 bg-gray-50">
-    <h2 class="text-3xl font-bold text-gray-800 text-center mb-8">Contáctanos</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-        <form action="./controls/mail.php" method="POST" class="bg-white p-6 shadow-lg rounded-lg">
 
-            <h3 class="text-2xl font-bold text-gray-800 mb-4">Envíanos un mensaje</h3>
-            <div class="mb-4">
-                <label for="nombre" class="block text-gray-600 mb-2">Nombre</label>
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre" required class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-orange-600">
-            </div>
-            <div class="mb-4">
-                <label for="correo" class="block text-gray-600 mb-2">Correo</label>
-                <input type="email" name="correo" id="correo" placeholder="Correo" required class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-orange-600">
-            </div>
-            <div class="mb-4">
-                <label for="mensaje" class="block text-gray-600 mb-2">Mensaje</label>
-                <textarea name="mensaje" id="mensaje" placeholder="Mensaje" required class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-orange-600"></textarea>
-            </div>
-            <button type="submit" class="bg-orange-600 text-white px-6 py-3 rounded-lg hover:bg-orange-700 transition-colors w-full">Enviar</button>
-        </form>
-        
-        
-        <!-- Información de Contacto -->
-        <div class="bg-white p-6 shadow-lg rounded-lg">
-            <h3 class="text-2xl font-bold text-gray-800 mb-4">Información de Contacto</h3>
-            <div class="flex items-start mb-6">
-                <i class="fas fa-map-marker-alt text-orange-600 text-2xl mr-4"></i>
-                <div>
-                    <h4 class="text-lg font-bold text-gray-800">Dirección:</h4>
-                    <p class="text-gray-600">Calle 10 #5-50, Piendamó, Tunía, Cauca.</p>
+
+    </section>
+
+
+
+    <!-- Noticias -->
+    <section id="noticias" class="py-16 bg-white">
+        <!-- Contenedor de noticias en tarjetas -->
+        <h2 class="text-3xl font-bold text-gray-800 text-center mb-8">Noticias</h2>
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Tarjeta 1 -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md flex flex-col items-center">
+                    <iframe
+                        src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FAlcaldiaPiendamoTunia%2Fvideos%2F895969775859161%2F&show_text=true&width=500&t=0"
+                        class="w-full h-[500px] sm:h-[550px] md:h-[600px] rounded-lg" style="border:none;overflow:auto"
+                        scrolling="yes" frameborder="0" allowfullscreen="true"
+                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                    </iframe>
                 </div>
-            </div>
-            <div class="flex items-start mb-6">
-                <i class="fas fa-phone text-orange-600 text-2xl mr-4"></i>
-                <div>
-                    <h4 class="text-lg font-bold text-gray-800">Teléfono:</h4>
-                    <p class="text-gray-600">(+57) 123 4567</p>
+
+                <!-- Tarjeta 2 -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md flex flex-col items-center">
+                    <iframe
+                        src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Finred.piendamo%2Fposts%2Fpfbid0icPJGjVVdYYxupUT8ypL9JFkdKNVaS4N7hTkod81cR9Y6Lf6E2sXFVgHyEkh5uLZl&show_text=true&width=500"
+                        class="w-full h-[500px] sm:h-[550px] md:h-[600px] rounded-lg" style="border:none;overflow:auto"
+                        scrolling="yes" frameborder="0" allowfullscreen="true"
+                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                    </iframe>
                 </div>
-            </div>
-            <div class="flex items-start">
-                <i class="fas fa-envelope text-orange-600 text-2xl mr-4"></i>
-                <div>
-                    <h4 class="text-lg font-bold text-gray-800">Correo:</h4>
-                    <p class="text-gray-600">in.redmpal@piendamo-cauca.gov.co</p>
+
+                <!-- Tarjeta 3 -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md flex flex-col items-center">
+                    <iframe
+                        src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Finred.piendamo%2Fposts%2Fpfbid0AKYZUJJKaEbpNq2m9Tb2dzV5z45gbhkuLqLGmPQkd4YzZtHkbr9Macjo4DG1dkrpl&show_text=true&width=500"
+                        class="w-full h-[500px] sm:h-[550px] md:h-[600px] rounded-lg" style="border:none;overflow:auto"
+                        scrolling="yes" frameborder="0" allowfullscreen="true"
+                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                    </iframe>
+
                 </div>
-            </div>
-            <!-- Mapa de Google -->
-            <div class="mt-6">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3938.056048296591!2d-77.305361!3d2.822121!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4bb1a5876c87bb%3A0xc1c1a68b7a1b3f66!2sPiendamo%2C%20Cauca!5e0!3m2!1ses-419!2sco!4v1679518700921!5m2!1ses-419!2sco" 
-                    width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
+
+
+
+
+
+    <!-- Sección de Eventos -->
+    <section id="eventos" class="py-16 bg-black text-white">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold text-orange-500 mb-8">Eventos</h2>
+            <p class="text-gray-300 text-lg mb-12">
+                Descubre los eventos destacados que fomentan el deporte y la recreación en nuestra comunidad.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Evento 1: Intercolegiados Regionales Cauca 2024 -->
+                <div class="bg-gray-800 shadow-lg rounded-lg overflow-hidden">
+                    <img src="./assets/img/intercolegiados.jpg" alt="Torneos Interbarrios de Piendamó y Tunía"
+                        class="w-full h-58 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-orange-500 mb-4">Intercolegiados Regionales Cauca 2024</h3>
+                        <p class="text-gray-300 mb-4">
+                            Los mejores talentos deportivos estudiantiles del Cauca se darán cita para competir y
+                            demostrar su espíritu deportivo. ¡No te pierdas este gran evento!
+                        </p>
+                        <p class="text-gray-400 text-sm">Fecha: Marzo 2024</p>
+                        <p class="text-gray-400 text-sm">Lugar: Coliseo Municipal de Piendamó</p>
+                    </div>
+                </div>
+                <!-- Evento 2: Torneos Interbarrios -->
+                <div class="bg-gray-800 shadow-lg rounded-lg overflow-hidden">
+                    <img src="./assets/img/barrios.jpg" alt="Torneos Interbarrios de Piendamó y Tunía"
+                        class="w-full h-58 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-orange-500 mb-4">Torneos Interbarrios Piendamó y Tunía</h3>
+                        <p class="text-gray-300 mb-4">
+                            Un espacio para la comunidad donde se reúnen deportistas de diferentes barrios para competir
+                            en diversas disciplinas. ¡Participa y apoya a tu equipo!
+                        </p>
+                        <p class="text-gray-400 text-sm">Fecha: Junio 2024</p>
+                        <p class="text-gray-400 text-sm">Lugar: Cancha Principal de Tunía</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contáctanos -->
+    <section id="contacto" class="py-16 bg-gray-50">
+        <h2 class="text-3xl font-bold text-gray-800 text-center mb-8">Contáctanos</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <form action="./controls/mail.php" method="POST" class="bg-white p-6 shadow-lg rounded-lg">
+
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">Envíanos un mensaje</h3>
+                <div class="mb-4">
+                    <label for="nombre" class="block text-gray-600 mb-2">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" required
+                        class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-orange-600">
+                </div>
+                <div class="mb-4">
+                    <label for="correo" class="block text-gray-600 mb-2">Correo</label>
+                    <input type="email" name="correo" id="correo" placeholder="Correo" required
+                        class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-orange-600">
+                </div>
+                <div class="mb-4">
+                    <label for="mensaje" class="block text-gray-600 mb-2">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" placeholder="Mensaje" required
+                        class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-orange-600"></textarea>
+                </div>
+                <button type="submit"
+                    class="bg-orange-600 text-white px-6 py-3 rounded-lg hover:bg-orange-700 transition-colors w-full">Enviar</button>
+            </form>
+
+
+            <!-- Información de Contacto -->
+            <div class="bg-white p-6 shadow-lg rounded-lg">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">Información de Contacto</h3>
+                <div class="flex items-start mb-6">
+                    <i class="fas fa-map-marker-alt text-orange-600 text-2xl mr-4"></i>
+                    <div>
+                        <h4 class="text-lg font-bold text-gray-800">Dirección:</h4>
+                        <p class="text-gray-600">Canchas Sintéticas de Amagá Parque lineal Piendamó.</p>
+                    </div>
+                </div>
+                <div class="flex items-start mb-6">
+                    <i class="fas fa-phone text-orange-600 text-2xl mr-4"></i>
+                    <div>
+                        <h4 class="text-lg font-bold text-gray-800">Teléfono:</h4>
+                        <p class="text-gray-600">(+57) 123 4567</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <i class="fas fa-envelope text-orange-600 text-2xl mr-4"></i>
+                    <div>
+                        <h4 class="text-lg font-bold text-gray-800">Correo:</h4>
+                        <p class="text-gray-600">in.redmpal@piendamo-cauca.gov.co</p>
+                    </div>
+                </div>
+                <!-- Mapa de Google -->
+                <div class="mt-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d498.196805609377!2d-76.5350938569194!3d2.6429009627708275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e300b9bee16bc5f%3A0x258e76daa997c1f4!2sCanchas%20Sint%C3%A9ticas%20de%20Amag%C3%A1%20Parque%20lineal%20Piendam%C3%B3!5e0!3m2!1ses-419!2sco!4v1737995475142!5m2!1ses-419!2sco"
+                        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
 
     <!-- Pie de Página -->
-<footer class="bg-orange-600 text-white py-12">
-    <div class="max-w-7xl mx-auto px-6">
-        <!-- Logotipo y Servicios -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Logotipo -->
-            <div class="flex flex-col items-center">
-                <img src="./assets/img/inred logo_Mesa de trabajo 1 (1).png" alt="Logotipo Inred Piendamó" class="w-38 h-auto mb-4">
-  
+    <footer class="bg-orange-600 text-white py-12">
+        <div class="max-w-7xl mx-auto px-6">
+            <!-- Logotipo y Servicios -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Logotipo -->
+                <div class="flex flex-col items-center">
+                    <img src="./assets/img/inred logo_Mesa de trabajo 1 (1).png" alt="Logotipo Inred Piendamó"
+                        class="w-38 h-auto mb-4">
+
+                </div>
+                <!-- Servicios -->
+                <div class="text-center py-5">
+                    <h3 class="text-2xl font-bold mb-6 text-white">Servicios y Deportes</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-white text-lg">
+                        <ul class="space-y-4">
+                            <li class="flex items-center justify-center space-x-2">
+                                <span>⚽</span>
+                                <a href="futbol.html" class="relative hover:text-gray-400 transition duration-300 
+                    after:block after:h-[2px] after:w-full after:bg-black after:scale-x-0 
+                    hover:after:scale-x-100 after:transition-transform after:duration-300">
+                                    Fútbol
+                                </a>
+                            </li>
+                            <li class="flex items-center justify-center space-x-2">
+                                <span>🏊</span>
+                                <a href="natacion.html" class="relative hover:text-gray-400 transition duration-300 
+                    after:block after:h-[2px] after:w-full after:bg-black after:scale-x-0 
+                    hover:after:scale-x-100 after:transition-transform after:duration-300">
+                                    Natación
+                                </a>
+                            </li>
+                            <li class="flex items-center justify-center space-x-2">
+                                <span>🏀</span>
+                                <a href="baloncesto.html" class="relative hover:text-gray-400 transition duration-300 
+                    after:block after:h-[2px] after:w-full after:bg-black after:scale-x-0 
+                    hover:after:scale-x-100 after:transition-transform after:duration-300">
+                                    Baloncesto
+                                </a>
+                            </li>
+                            <li class="flex items-center justify-center space-x-2">
+                                <span>🤾</span>
+                                <a href="futbol_sala.html" class="relative hover:text-gray-400 transition duration-300 
+                    after:block after:h-[2px] after:w-full after:bg-black after:scale-x-0 
+                    hover:after:scale-x-100 after:transition-transform after:duration-300">
+                                    Fútbol Sala
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="space-y-4">
+                            <li class="flex items-center justify-center space-x-2">
+                                <span>🚴</span>
+                                <a href="bmx.html" class="relative hover:text-gray-400 transition duration-300 
+                    after:block after:h-[2px] after:w-full after:bg-black after:scale-x-0 
+                    hover:after:scale-x-100 after:transition-transform after:duration-300">
+                                    BMX
+                                </a>
+                            </li>
+                            <li class="flex items-center justify-center space-x-2">
+                                <span>🏐</span>
+                                <a href="voleibol.html" class="relative hover:text-gray-400 transition duration-300 
+                    after:block after:h-[2px] after:w-full after:bg-black after:scale-x-0 
+                    hover:after:scale-x-100 after:transition-transform after:duration-300">
+                                    Voleibol
+                                </a>
+                            </li>
+                            <li class="flex items-center justify-center space-x-2">
+                                <span>⛸️</span>
+                                <a href="patinaje.html" class="relative hover:text-gray-400 transition duration-300 
+                    after:block after:h-[2px] after:w-full after:bg-black after:scale-x-0 
+                    hover:after:scale-x-100 after:transition-transform after:duration-300">
+                                    Patinaje
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <!-- Redes Sociales -->
+                <div class="text-center">
+                    <h3 class="text-xl font-bold mb-4">Síguenos</h3>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-white hover:text-gray-300 text-2xl">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-gray-300 text-2xl">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-gray-300 text-2xl">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-gray-300 text-2xl">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <!-- Servicios -->
-            <div class="text-center">
-                <h3 class="text-xl font-bold mb-4">Servicios y Deportes</h3>
-                <ul class="space-y-2">
-                    <li>⚽ Fútbol</li>
-                    <li>🏊 Natación</li>
-                    <li>🏀 Baloncesto</li>
-                    <li>🤾 Fútbol Sala</li>
-                    <li>🚴 BMX</li>
-                    <li>🏐 Voleibol</li>
-                </ul>
-            </div>
-            
-            <!-- Redes Sociales -->
-            <div class="text-center">
-                <h3 class="text-xl font-bold mb-4">Síguenos</h3>
-                <div class="flex justify-center space-x-4">
-                    <a href="#" class="text-white hover:text-gray-300 text-2xl">
-                        <i class="fab fa-facebook"></i>
+            <!-- Enlaces de Interés -->
+            <div class="mt-12 border-t border-white pt-8 text-center">
+                <h3 class="text-lg font-bold mb-4">Enlaces de Interés</h3>
+                <div class="flex flex-wrap justify-center space-x-6 gap-6">
+                    <a href="https://www.piendamo-cauca.gov.co" target="_blank" class="hover:text-gray-300">
+                        <img src="./assets/img/piendamo.png" alt="Piendamo" class="w-32 h-auto max-w-full mx-auto">
                     </a>
-                    <a href="#" class="text-white hover:text-gray-300 text-2xl">
-                        <i class="fab fa-twitter"></i>
+                    <a href="https://www.cauca.gov.co/paginas/default.aspx" target="_blank" class="hover:text-gray-300">
+                        <img src="./assets/img/gover.png" alt="Gobernación del Cauca"
+                            class="w-32 h-auto max-w-full mx-auto">
                     </a>
-                    <a href="#" class="text-white hover:text-gray-300 text-2xl">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="#" class="text-white hover:text-gray-300 text-2xl">
-                        <i class="fab fa-youtube"></i>
+                    <a href="https://www.mindeporte.gov.co/" target="_blank" class="hover:text-gray-300">
+                        <img src="./assets/img/mindeportes.jpg" alt="Mindeporte" class="w-32 h-auto max-w-full mx-auto">
                     </a>
                 </div>
             </div>
+
+            <!-- Derechos Reservados -->
+            <p class="mt-8 text-sm text-center">
+                © 2025 INRED Piendamó. Todos los derechos reservados.
+            </p>
         </div>
-        <!-- Enlaces de Interés -->
-<div class="mt-12 border-t border-white pt-8 text-center">
-    <h3 class="text-lg font-bold mb-4">Enlaces de Interés</h3>
-    <div class="flex flex-wrap justify-center space-x-6 gap-6">
-        <a href="https://www.piendamo-cauca.gov.co" target="_blank" class="hover:text-gray-300">
-            <img src="./assets/img/piendamo.png" alt="Piendamo" class="w-32 h-auto max-w-full mx-auto">
-        </a>
-        <a href="https://www.cauca.gov.co/paginas/default.aspx" target="_blank" class="hover:text-gray-300">
-            <img src="./assets/img/gover.png" alt="Gobernación del Cauca" class="w-32 h-auto max-w-full mx-auto">
-        </a>
-        <a href="https://www.mindeporte.gov.co/" target="_blank" class="hover:text-gray-300">
-            <img src="./assets/img/mindeportes.jpg" alt="Mindeporte" class="w-32 h-auto max-w-full mx-auto">
-        </a>
-    </div>
-</div>
-
-        <!-- Derechos Reservados -->
-        <p class="mt-8 text-sm text-center">
-            © 2025 INRED Piendamó. Todos los derechos reservados.
-        </p>
-    </div>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
-<script src="./assets/js/main.js"></script>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
+
 </html>
 </body>
-</html>
 
+</html>
