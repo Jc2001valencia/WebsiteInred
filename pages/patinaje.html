@@ -29,78 +29,74 @@
 
 
     <!-- Encabezado minimalista -->
-    <nav class="bg-orange-500 fixed w-full top-0 left-0 shadow-md z-50">
-        <div class="max-w-screen-xl mx-auto flex items-center justify-between p-4">
-            <!-- Logo -->
-            <a href="#" class="flex items-center">
-                <img src="../assets/img/inred logo_Mesa de trabajo 1 (1).png" class="h-8" alt="Logo Institucional" />
-            </a>
+<nav class="bg-orange-500 fixed w-full top-0 left-0 shadow-md z-50">
+    <div class="max-w-screen-xl mx-auto flex items-center justify-between p-4">
+        <!-- Logo -->
+        <a href="../index.html" class="flex items-center">
+            <img src="../assets/img/inred logo_Mesa de trabajo 1 (1).png" class="h-8" alt="Logo Institucional" />
+        </a>
 
-            <!-- Botón para menú móvil -->
-            <button id="menu-toggle" class="md:hidden text-black focus:outline-none">
-                <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                </svg>
+        <!-- Botón para menú móvil -->
+        <button id="menu-toggle" class="md:hidden text-white font-bold focus:outline-none">
+            <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+        </button>
+
+        <!-- Menú de navegación -->
+        <div id="menu" class="hidden md:flex space-x-6">
+            <a href="../index.html" class="text-white font-bold hover:text-black transition-all">Inicio</a>
+            <a href="../index.html#quienes-somos" class="text-white font-bold hover:text-black transition-all">Misión y Visión</a>
+            <a href="../index.html#eventos" class="text-white font-bold hover:text-black transition-all">Eventos</a>
+            <a href="../index.html#noticias" class="text-white font-bold hover:text-black transition-all">Noticias</a>
+            <a href="../index.html#contacto" class="text-white font-bold hover:text-black transition-all">Contacto</a>
+
+            <!-- Menú desplegable Deportes -->
+            <div class="relative group">
+                <a href="#servicios" class="text-white font-bold hover:text-black transition-all flex items-center">
+                    Deportes
+                    <svg class="w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </a>
+                <div
+                    class="absolute left-0 hidden group-hover:block bg-orange-500 text-white shadow-lg rounded-md mt-2 w-40">
+                    <a href="./futbol.html" class="block px-4 py-2 font-bold hover:bg-white hover:text-black">Fútbol</a>
+                    <a href="./baloncesto.html" class="block px-4 py-2 font-bold hover:bg-white hover:text-black">Baloncesto</a>
+                    <a href="./natacion.html" class="block px-4 py-2 font-bold hover:bg-white hover:text-black">Natación</a>
+                    <a href="./bmx.html" class="block px-4 py-2 font-bold hover:bg-white hover:text-black">BMX</a>
+                    <a href="./futbol_sala.html" class="block px-4 py-2 font-bold hover:bg-white hover:text-black">Fútbol Sala</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menú desplegable para móvil -->
+    <div id="mobile-menu" class="hidden flex flex-col items-center bg-orange-500 md:hidden">
+        <a href="../index.html/#controls-carousel" class="py-2 text-white font-bold hover:text-black">Inicio</a>
+        <a href="../index.html/#quienes-somos" class="py-2 text-white font-bold hover:text-black">Misión y Visión</a>
+        <a href="../index.html/#eventos" class="py-2 text-white font-bold hover:text-black">Eventos</a>
+        <a href="../index.html/#noticias" class="py-2 text-white font-bold hover:text-black">Noticias</a>
+        <a href="../index.html/#contacto" class="py-2 text-white font-bold hover:text-black">Contacto</a>
+
+        <!-- Deportes para móvil -->
+        <div class="w-full text-center">
+            <a href="../index.html/#servicios" class="py-2 text-white font-bold hover:text-black">Deportes</a>
+            <button id="mobile-deportes-toggle" class="py-2 text-white font-bold hover:text-black w-full">
+                Submenú Deportes
             </button>
-
-            <!-- Menú de navegación -->
-            <div id="menu" class="hidden md:flex space-x-6">
-                <a href="../index.html" class="text-black hover:text-white transition-all">Inicio</a>
-                <a href="../index.html#quienes-somos" class="text-black hover:text-white transition-all">Misión y
-                    Visión</a>
-                <a href="../index.html#eventos" class="text-black hover:text-white transition-all">Eventos</a>
-                <a href="../index.html#noticias" class="text-black hover:text-white transition-all">Noticias</a>
-                <a href="../index.html#contacto" class="text-black hover:text-white transition-all">Contacto</a>
-
-                <!-- Menú desplegable Deportes -->
-                <div class="relative group">
-                    <a href="#servicios" class="text-black hover:text-white transition-all flex items-center">
-                        Deportes
-                        <svg class="w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </a>
-                    <div
-                        class="absolute left-0 hidden group-hover:block bg-orange-500 text-black shadow-lg rounded-md mt-2 w-40">
-                        <a href="futbol.html" class="block px-4 py-2 hover:bg-orange-600 hover:text-white">Fútbol</a>
-                        <a href="baloncesto.html"
-                            class="block px-4 py-2 hover:bg-orange-600 hover:text-white">Baloncesto</a>
-                        <a href="natacion.html"
-                            class="block px-4 py-2 hover:bg-orange-600 hover:text-white">Natación</a>
-                        <a href="bmx.html" class="block px-4 py-2 hover:bg-orange-600 hover:text-white">BMX</a>
-                        <a href="futbol_sala.html" class="block px-4 py-2 hover:bg-orange-600 hover:text-white">Fútbol
-                            Sala</a>
-                    </div>
-                </div>
+            <div id="mobile-deportes-menu" class="hidden flex flex-col bg-orange-500">
+                <a href="../index.html/futbol.html" class="py-2 text-white font-bold hover:text-black">Fútbol</a>
+                <a href="../index.html/baloncesto.html" class="py-2 text-white font-bold hover:text-black">Baloncesto</a>
+                <a href="../index.html/natacion.html" class="py-2 text-white font-bold hover:text-black">Natación</a>
+                <a href="../index.html/bmx.html" class="py-2 text-white font-bold hover:text-black">BMX</a>
+                <a href="../index.html/futbol_sala.html" class="py-2 text-white font-bold hover:text-black">Fútbol Sala</a>
             </div>
         </div>
-
-        <!-- Menú desplegable para móvil -->
-        <div id="mobile-menu" class="hidden flex flex-col items-center bg-orange-500 md:hidden">
-            <a href="#controls-carousel" class="py-2 text-black hover:text-white">Inicio</a>
-            <a href="#quienes-somos" class="py-2 text-black hover:text-white">Misión y Visión</a>
-            <a href="#eventos" class="py-2 text-black hover:text-white">Eventos</a>
-            <a href="#noticias" class="py-2 text-black hover:text-white">Noticias</a>
-            <a href="#contacto" class="py-2 text-black hover:text-white">Contacto</a>
-
-            <!-- Deportes para móvil -->
-            <div class="w-full text-center">
-                <a href="#servicios" class="py-2 text-black hover:text-white">Deportes</a>
-                <button id="mobile-deportes-toggle" class="py-2 text-black hover:text-white w-full">
-                    Submenú Deportes
-                </button>
-                <div id="mobile-deportes-menu" class="hidden flex flex-col bg-orange-500">
-                    <a href="futbol.html" class="py-2 text-black hover:text-white">Fútbol</a>
-                    <a href="baloncesto.html" class="py-2 text-black hover:text-white">Baloncesto</a>
-                    <a href="natacion.html" class="py-2 text-black hover:text-white">Natación</a>
-                    <a href="bmx.html" class="py-2 text-black hover:text-white">BMX</a>
-                    <a href="futbol_sala.html" class="py-2 text-black hover:text-white">Fútbol Sala</a>
-                </div>
-            </div>
-        </div>
-    </nav>
+    </div>
+</nav>
 
     <!--   Cuerpo de la paguina    -->
     <!-- Información General del Deporte -->
@@ -121,38 +117,41 @@
     <section id="horarios-patinaje" class="py-16 bg-gray-200 text-center">
         <div class="max-w-6xl mx-auto px-6">
             <h2 class="text-3xl font-bold text-orange-600 mb-6">Horarios de Entrenamiento</h2>
-            <table class="w-full bg-white shadow-md rounded-lg overflow-hidden">
-                <thead class="bg-orange-500 text-white">
-                    <tr>
-                        <th class="py-3 px-6">Día</th>
-                        <th class="py-3 px-6">Hora</th>
-                        <th class="py-3 px-6">Categoría</th>
-                        <th class="py-3 px-6">Lugar</th>
-                    </tr>
-                </thead>
-                <tbody class="text-gray-700">
-                    <tr>
-                        <td class="py-4 px-6">Martes</td>
-                        <td class="py-4 px-6">16:00 - 18:00</td>
-                        <td class="py-4 px-6">Infantil</td>
-                        <td class="py-4 px-6">Pista Municipal</td>
-                    </tr>
-                    <tr>
-                        <td class="py-4 px-6">Jueves</td>
-                        <td class="py-4 px-6">17:00 - 19:00</td>
-                        <td class="py-4 px-6">Juvenil</td>
-                        <td class="py-4 px-6">Parque Deportivo</td>
-                    </tr>
-                    <tr>
-                        <td class="py-4 px-6">Sábado</td>
-                        <td class="py-4 px-6">08:00 - 10:00</td>
-                        <td class="py-4 px-6">Femenino</td>
-                        <td class="py-4 px-6">Pista Olímpica</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white shadow-md rounded-lg">
+                    <thead class="bg-orange-500 text-white">
+                        <tr>
+                            <th class="py-3 px-6 text-left">Día</th>
+                            <th class="py-3 px-6 text-left">Hora</th>
+                            <th class="py-3 px-6 text-left">Categoría</th>
+                            <th class="py-3 px-6 text-left">Lugar</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-gray-700">
+                        <tr class="border-b">
+                            <td class="py-4 px-6">Martes</td>
+                            <td class="py-4 px-6">16:00 - 18:00</td>
+                            <td class="py-4 px-6">Infantil</td>
+                            <td class="py-4 px-6">Pista Municipal</td>
+                        </tr>
+                        <tr class="bg-gray-100 border-b">
+                            <td class="py-4 px-6">Jueves</td>
+                            <td class="py-4 px-6">17:00 - 19:00</td>
+                            <td class="py-4 px-6">Juvenil</td>
+                            <td class="py-4 px-6">Parque Deportivo</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="py-4 px-6">Sábado</td>
+                            <td class="py-4 px-6">08:00 - 10:00</td>
+                            <td class="py-4 px-6">Femenino</td>
+                            <td class="py-4 px-6">Pista Olímpica</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </section>
+    
 
     <!-- Instructores -->
     <section id="instructores-patinaje" class="py-16 bg-white text-center">
